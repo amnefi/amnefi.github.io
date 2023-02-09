@@ -1,32 +1,82 @@
+/* ESTILOS DE LA LISTA DE PROYECTOS */
 
-
-/* ESTILOS A LA LISTA DE PROYECTOS */
-.switch{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    /* margin-bottom: 100px; */
+.projects {
+    text-align: center;
+    margin: 20vh auto 20vh auto;
 }
-.software__list{
-    /* margin-top: 100px; */
-    column-span: all;
-    padding: 15px;
+
+.projects>h1 {
+    color: #00FFB6;
+    font-weight: 300;
+}
+
+.container__projects {
+    /* CENTRAR LOS ELEMENTOS */
     display: flex;
-    border: solid 1px black;
-    height: 150px;
-    width: 300px;
-
-}
-.list__select{
-    list-style: none;
-
-}
-.list__link {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    
+    align-items: center;
+    justify-content: center;
 }
 
+/* CARD */
+.card__project {
+    background: #FFF;
+    color: #000;
+    margin: 20px;
+    width: 20vw;
+}
 
+.card__image {
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__image1 {
+    background-image: url(../images/image1.png);
+}
+
+.card__image2 {
+    background-image: url(../images/image2.jpg);
+}
+
+.card__image3 {
+    background-image: url(../images/image3.jpg);
+}
+
+.card__image4 {
+    background-image: url(../images/image4.jpg);
+}
+
+.card__txt {
+    margin: 20px 30px 20px 30px;
+    font-size: 0.875em;
+}
+
+button {
+    border: none;
+    background: #8607FE;
+    color: #fff;
+    height: 10vh;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+    .projects {
+        text-align: center;
+        margin: 5vh auto 5vh auto;
+    }
+
+    button {
+        display: none;
+    }
+
+    .container__projects {
+        /* CENTRAR ELEMENTOS */
+        flex-direction: column;
+    }
+
+    .card__project {
+        width: 90vw;
+    }
+}

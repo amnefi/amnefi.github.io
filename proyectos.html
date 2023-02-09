@@ -16,7 +16,7 @@
         <nav class="navbar" id="navbar">
             <ul class="navbar__menu" id="navbar__menu">
                 <li class="navbar__select">
-                    <a href="index" class="navbar__link"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                    <a href="index.html" class="navbar__link"><i class="bi bi-house-door-fill"></i> Inicio</a>
                 </li>
                 <li class="navbar__select">
                     <a href="#" class="navbar__link">Sobre mi</a>
@@ -28,10 +28,10 @@
                     <a href="proyectos.html" class="navbar__link"><i class="bi bi-columns"></i> Proyectos</a>
                 </li>
 
-                <!-- <label class="switch">
+                <label class="switch">
                     <input type="checkbox">
                     <span class="slider"></span>
-                </label> -->
+                </label>
             </ul>
             <button class="tog__navbar">
                 <i class="bi bi-list"></i>
@@ -39,42 +39,40 @@
         </nav>
     </header>
 
-
     <main>
-
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-        </label>
-
-
-
-        <div class="software__list">
-            <ul class="list">
-                <li class="list__select">
-                    <a class="list__link" href="">Reproductor de Música</a>
-                </li>
-                <li class="list__select">
-                    <a class="list__link" href="">Calculadora</a>
-                </li>
-                <li class="list__select">
-                    <a class="list__link" href="">CRUD en JQuery</a>
-                </li>
-                <li class="list__select">
-                    <a class="list__link" href="">Tic Tac Toe</a>
-                </li>
-                <li class="list__select">
-                    <a class="list__link" href="">Puzzle Memoria</a>
-                </li>
-            </ul>
-
+        <div class="projects">
+            <h1>Mis Proyectos</h1>
+            <div class="container__projects">
+                <button class="left"><</button>
+                <div class="card__project">
+                    <div class="card__image1 card__image"></div>
+                    <div class="card__txt">Reproductor de Música</div>
+                </div>
+                <div class="card__project">
+                    <div class="card__image2 card__image"></div>
+                    <div class="card__txt">Calculadora</div>
+                </div>
+                <div class="card__project">
+                    <div class="card__image2 card__image"></div>
+                    <div class="card__txt">CRUD en JQuery</div>
+                </div>
+                <div class="card__project">
+                    <div class="card__image3 card__image"></div>
+                    <div class="card__txt">Tic Tac Toe</div>
+                </div>
+                <div class="card__project">
+                    <div class="card__image4 card__image"></div>
+                    <div class="card__txt">Puzzle Memoria</div>
+                </div>
+                <button class="right">></button>
+            </div>
         </div>
-
+        <!-- <footer>
+            <p>&copy; Copyright <span id="currentYear"></span> Nefi Avila M.</p>
+        </footer> -->
     </main>
 
-    <footer>
-        <p>&copy; Copyright <span id="currentYear"></span> Nefi Avila M.</p>
-    </footer>
+
 </body>
 <script src="recursos/js/index.js"></script>
 

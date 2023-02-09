@@ -10,50 +10,64 @@
     <title>Contacto | Nefi Avila</title>
 </head>
 
-<body>
-    <main>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="proyectos.html">Proyectos</a>
-                </li>
-            </ul>
+<body onload="updateYear()">
+    <header>
+        <nav class="navbar  nav aos-init aos-animate" data-aos="fade-down"></nav>
+        <ul class="navbar__menu" id="navbar__menu">
+            <li class="sect__navbar">
+                <a href="index.html" class="link__navbar"><i class="bi bi-house-door-fill"></i> Inicio</a>
+            </li>
+            <li class="sect__navbar">
+                <a href="#" class="link__navbar">Sobre mi</a>
+            </li>
+            <li class="sect__navbar">
+                <a href="contacto.html" class="link__navbar"><i class="bi bi-person-fill"></i> Contacto</a>
+            </li>
+            <li class="sect__navbar">
+                <a href="proyectos.html" class="link__navbar"><i class="bi bi-columns"></i> Proyectos</a>
+            </li>
+
+
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </ul>
+        <button class="tog__navbar">
+
+            <i class="bi bi-list"></i>
+        </button>
         </nav>
-        <h1>Contacto</h1>
-        <form action="contacto.php" method="post">
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
+    </header>
 
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </div>
+    <h1>Contacto</h1>
+    <form action="contacto.php" method="post">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
 
-            <div>
-                <label for="telefono">Telefono</label>
-                <input type="tel" name="telefono" id="telefono">
-            </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
 
-            <div>
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-            </div>
+        <div>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono">
+        </div>
 
-            <input type="submit" value="Enviar">
-        </form>
-    </main>
+        <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
 
 </body>
+<script src="recursos/js/index.js"></script>
 
 </html>

@@ -16,16 +16,16 @@
         <nav class="navbar" id="navbar">
             <ul class="navbar__menu" id="navbar__menu">
                 <li class="navbar__select">
-                    <a href="index.html" class="navbar__link"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                    <a href="index" class="navbar__link"><i class="bi bi-house-door-fill"></i> Inicio</a>
                 </li>
                 <li class="navbar__select">
                     <a href="#" class="navbar__link">Sobre mi</a>
                 </li>
                 <li class="navbar__select">
-                    <a href="contacto.html" class="navbar__link"><i class="bi bi-person-fill"></i> Contacto</a>
+                    <a href="contacto" class="navbar__link"><i class="bi bi-person-fill"></i> Contacto</a>
                 </li>
                 <li class="navbar__select">
-                    <a href="proyectos.html" class="navbar__link"><i class="bi bi-columns"></i> Proyectos</a>
+                    <a href="proyectos" class="navbar__link"><i class="bi bi-columns"></i> Proyectos</a>
                 </li>
 
                 <!-- <label class="switch">

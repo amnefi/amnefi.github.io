@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="stylesheet" href="recursos/css/index.css">
-    <title>Contacto | Nefi Avila</title>
+    <title>Inicio | Nefi Avila</title>
 </head>
 
 <body onload="updateYear()">
@@ -15,16 +15,16 @@
         <nav class="navbar" id="navbar">
             <ul class="navbar__menu" id="navbar__menu">
                 <li class="navbar__select">
-                    <a href="index.html" class="navbar__link"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                    <a href="index" class="navbar__link"><i class="bi bi-house-door-fill"></i> Inicio</a>
                 </li>
                 <li class="navbar__select">
                     <a href="#" class="navbar__link">Sobre mi</a>
                 </li>
                 <li class="navbar__select">
-                    <a href="contacto.html" class="navbar__link"><i class="bi bi-person-fill"></i> Contacto</a>
+                    <a href="contacto" class="navbar__link"><i class="bi bi-person-fill"></i> Contacto</a>
                 </li>
                 <li class="navbar__select">
-                    <a href="proyectos.html" class="navbar__link"><i class="bi bi-columns"></i> Proyectos</a>
+                    <a href="proyectos" class="navbar__link"><i class="bi bi-columns"></i> Proyectos</a>
                 </li>
 
                 <label class="switch">
@@ -39,34 +39,30 @@
         </nav>
     </header>
 
-    <h1>Contacto</h1>
-    <form action="contacto.php" method="post">
-        <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-        </div>
 
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-        </div>
 
-        <div>
-            <label for="telefono">Telefono</label>
-            <input type="tel" name="telefono" id="telefono">
-        </div>
+    
+    <div>
+        <figure>
+            <img src="image/pefil.jpg" alt="Imagen de perfil">
+            <figcaption>Imagen de perfil</figcaption>
+        </figure>
+        Nefi Avila
+    </div>
 
-        <div>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-        </div>
+    <div>
+        <a class="downcv" href="CV - Nefi Avila.pdf" download>Descargar CV</a>
+    </div>
 
-        <input type="submit" value="Enviar">
-    </form>
+
+
+
+
 
     <footer>
         <p>&copy; Copyright <span id="currentYear"></span> Nefi Avila M.</p>
     </footer>
+
 </body>
 <script src="recursos/js/index.js"></script>
 

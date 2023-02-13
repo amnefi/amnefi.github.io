@@ -1,0 +1,197 @@
+/* ESTILOS DE LA CABECERA PARA LOS ENLACES */
+
+header {
+    width: 100%;
+    background-color: #252934c4;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 0 #00000080;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    user-select: none;
+}
+
+.navbar {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: -13px auto;
+}
+
+.navbar__menu {
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    gap: 35px;
+}
+
+.navbar__select {
+    font-size: 16px;
+    list-style: none;
+    line-height: 50px;
+
+}
+
+.navbar__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s, border-bottom 0.5s;
+}
+
+.navbar__link:hover {
+    color: #00FFFF;
+    border-bottom: 1.5px solid #00FFFF;
+}
+
+.tog__navbar {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu {
+        position: fixed;
+        height: 100vh;
+        top: 50px;
+        width: 100%;
+        left: -100%;
+        transition: left 0.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #3f3f3f;
+    }
+
+    .navbar__select {
+        font-size: 1em;
+        list-style: none;
+        line-height: 50px;
+    }
+
+    .navbar__link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .navbar__link:hover {
+        color: #00FFFF;
+    }
+
+    .tog__navbar {
+        color: #fff;
+        background: none;
+        border: none;
+        font-size: 30px;
+        margin-left: 10px;
+        line-height: 50px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .navbar--visible {
+        left: 0;
+    }
+
+    .navbar__select:nth-child(1) {
+        margin-top: 30px;
+    }
+}
+
+
+
+/* BOTON DE DESCARGAR CV */
+
+.downcv {
+    text-decoration: none;
+    background: linear-gradient(#77dcfe, #4d4d4d);
+    padding: 4px 4px 4px 4px;
+    color: black;
+    border-radius: 3px;
+}
+
+.downcv:hover {
+    background: linear-gradient(#53D4FF, #000000);
+    color: black;
+    padding: 4px 4px 4px 4px;
+    border-radius: 3px;
+}
+
+
+
+/* MODO OSCURO */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* flex-direction: column; */
+    /* font-family: "Roboto"; */
+    background-color: #f2f2f7;
+    transition: 0.4s;
+}
+
+body.dark {
+    background-color: #212121;
+    color: #fff;
+}
+
+.switch {
+    /* margin-left: 200px; */
+    position: relative;
+    width: 3.5rem;
+    height: 2rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(215, 215, 228);
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 20px;
+    left: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #37393f;
+}
+
+input:checked+.slider:before {
+    left: calc(100% - 1.7rem);
+    background: #37393f;
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}

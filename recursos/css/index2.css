@@ -50,16 +50,24 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+    header {
+        position: fixed;
+        z-index: 10;
+    }
+
     .navbar {
         max-width: 1024px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        position: fixed;
+        z-index: 100;
+        padding: 20px;
+        position: fixed;
     }
 
     .navbar__menu {
-        position: fixed;
         height: 100vh;
         top: 50px;
         width: 100%;

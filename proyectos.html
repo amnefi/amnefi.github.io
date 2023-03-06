@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="stylesheet" href="recursos/css/index.css">
-    <link rel="stylesheet" href="recursos/css/proyectos.css">
+    <!-- <link rel="stylesheet" href="recursos/css/proyectos.css"> -->
     <title>Proyectos | Nefi Avila</title>
 </head>
 
 <body onload="updateYear()">
     <header>
+        <button class="tog__navbar">
+            <i class="bi bi-list"></i>
+        </button>
         <nav class="navbar" id="navbar">
             <ul class="navbar__menu" id="navbar__menu">
                 <li class="navbar__select">
@@ -27,15 +30,7 @@
                 <li class="navbar__select">
                     <a href="proyectos.html" class="navbar__link"><i class="bi bi-columns"></i> Proyectos</a>
                 </li>
-
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
             </ul>
-            <button class="tog__navbar">
-                <i class="bi bi-list"></i>
-            </button>
         </nav>
     </header>
 
@@ -44,36 +39,36 @@
             <h1>Mis Proyectos</h1>
             <div class="container__projects">
                 <button class="left">
-                    << /button>
-                        <div class="card__project">
-                            <div class="card__image1 card__image"></div>
-                            <div class="card__txt"><a href="https://amnefi.github.io/reproductorMusica/">Reproductor de
-                                    Música</a></div>
-                        </div>
-                        <div class="card__project">
-                            <div class="card__image2 card__image"></div>
-                            <div class="card__txt"><a href="https://amnefi.github.io/calculadora/">Calculadora</a></div>
-                        </div>
-                        <div class="card__project">
-                            <div class="card__image2 card__image"></div>
-                            <div class="card__txt"><a href="https://amnefi.github.io/CRUD-JQuery/">CRUD en JQuery</a>
-                            </div>
-                        </div>
-                        <div class="card__project">
-                            <div class="card__image3 card__image"></div>
-                            <div class="card__txt"><a href="https://amnefi.github.io/tic-tac-toe/">Tic Tac Toe</a></div>
-                        </div>
-                        <div class="card__project">
-                            <div class="card__image4 card__image"></div>
-                            <div class="card__txt"><a href="https://amnefi.github.io/memoryCards/">Puzzle Memoria</a>
-                            </div>
-                        </div>
-                        <button class="right">></button>
+                    <i class="bi bi-caret-left-fill"></i>
+                </button>
+                <div class="card__project">
+                    <div class="card__image1 card__image"></div>
+                    <div class="card__txt"><a href="https://amnefi.github.io/reproductorMusica/">Reproductor de
+                            Música</a></div>
+                </div>
+                <div class="card__project">
+                    <div class="card__image2 card__image"></div>
+                    <div class="card__txt"><a href="https://amnefi.github.io/calculadora/">Calculadora</a></div>
+                </div>
+                <div class="card__project">
+                    <div class="card__image2 card__image"></div>
+                    <div class="card__txt"><a href="https://amnefi.github.io/CRUD-JQuery/">CRUD en JQuery</a>
+                    </div>
+                </div>
+                <div class="card__project">
+                    <div class="card__image3 card__image"></div>
+                    <div class="card__txt"><a href="https://amnefi.github.io/tic-tac-toe/">Tic Tac Toe</a></div>
+                </div>
+                <div class="card__project">
+                    <div class="card__image4 card__image"></div>
+                    <div class="card__txt"><a href="https://amnefi.github.io/memoryCards/">Puzzle Memoria</a>
+                    </div>
+                </div>
+                <button class="right">
+                    <i class="bi bi-caret-right-fill"></i>
+                </button>
             </div>
         </div>
-        <!-- <footer>
-            <p>&copy; Copyright <span id="currentYear"></span> Nefi Avila M.</p>
-        </footer> -->
     </main>
 
     <footer>

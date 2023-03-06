@@ -12,6 +12,9 @@
 
 <body onload="updateYear()">
     <header>
+        <button class="tog__navbar">
+            <i class="bi bi-list"></i>
+        </button>
         <nav class="navbar" id="navbar">
             <ul class="navbar__menu" id="navbar__menu">
                 <li class="navbar__select">
@@ -26,19 +29,18 @@
                 <li class="navbar__select">
                     <a href="proyectos.html" class="navbar__link"><i class="bi bi-columns"></i> Proyectos</a>
                 </li>
-
+            </ul>    
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container__main">
+            <div class="button__dark">
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider"></span>
                 </label>
-            </ul>
-            <button class="tog__navbar">
-                <i class="bi bi-list"></i>
-            </button>
-        </nav>
-    </header>
-    <main>
-        <div class="container__main">
+            </div>
             <div class="container__main__txt">
                 <h1>¡Hola! Soy Nefi Avila</h1>
             </div>
@@ -50,8 +52,6 @@
 
         </div>
     </main>
-
-
 
     <footer>
         <p>&copy; Copyright <span id="currentYear"></span> Nefi Avila M.</p>

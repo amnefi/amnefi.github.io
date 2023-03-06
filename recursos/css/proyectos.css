@@ -1,4 +1,10 @@
 /* ESTILOS DE LA LISTA DE PROYECTOS */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
 
 .projects {
     text-align: center;
